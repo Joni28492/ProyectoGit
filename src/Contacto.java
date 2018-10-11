@@ -13,8 +13,16 @@ public class Contacto {
     private String nombre;
     private String telefono;
     private String alias;
-    
+    private String apellidos;
 
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+    
     public Contacto(String nombre, String telefono) {
         this.nombre = nombre;
         this.telefono = telefono;
