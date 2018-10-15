@@ -14,6 +14,10 @@ public class Contacto {
     private String telefono;
     private String alias;
     private String apellidos;
+    
+    private static int numeroDeContactos=0;//static variable se comparte con todos los objetos de la clase 
+    //si se pone como public se puede poner con el 'nombre de la clase'.numeroDeContactos-> Contacto.numeroDeContactos
+    
 
     public String getApellidos() {
         return apellidos;
