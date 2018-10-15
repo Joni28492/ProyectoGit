@@ -17,8 +17,18 @@ public class Contacto {
     
     private static int numeroDeContactos=0;//static variable se comparte con todos los objetos de la clase 
     //si se pone como public se puede poner con el 'nombre de la clase'.numeroDeContactos-> Contacto.numeroDeContactos
+
+    public static int getNumeroDeContactos() {//metodos con static porque la variable es static
+
+        return numeroDeContactos;
+    }
+
+    public static void setNumeroDeContactos(int numeroDeContactos) {
+        Contacto.numeroDeContactos = numeroDeContactos;
+    }
     
 
+    
     public String getApellidos() {
         return apellidos;
     }
